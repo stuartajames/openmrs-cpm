@@ -35,11 +35,5 @@ public class CreateProposalPage extends BaseCpmPage {
 
     public void saveNewProposal() {
         driver.findElements(By.tagName("button")).get(1).click();
-
-        defaultWait.until(ExpectedConditions.alertIsPresent());
-        // Before you try to switch to the so given alert, he needs to be present.
-
-        Alert alert = driver.switchTo().alert();
-        alert.accept();
     }
 }
